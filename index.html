@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Texture Editor</title>
+	<link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+
+<div id="interface">
+	<div id="fleft">
+		<span>Base texture:</span>
+		<br>
+		<br>
+		<span>Layer 1 texture:</span>
+		<br>
+		<span>Layer 1 mask:</span>
+		<br>
+		<br>
+		<span>Layer 2 texture:</span>
+		<br>
+		<span>Layer 2 mask:</span>
+	</div>
+	<div id="fright">
+		<select id="bt">
+			<option>Metal - Galvanized</option>
+			<option>Metal - NoSlip Texture</option>
+			<option>Metal - Brushed</option>
+		</select>
+		<br>
+		<br>
+		<select id="l1t">
+			<option>Metal - Galvanized</option>
+			<option>Metal - NoSlip Texture</option>
+			<option>Metal - Brushed</option>
+		</select>
+		<select id="l1m">
+			<option>No mask</option>
+			<option>Round mask</option>
+			<option>Border mask</option>
+		</select>
+		<br>
+		<br>
+		<select id="l2t">
+			<option>Metal - Galvanized</option>
+			<option>Metal - NoSlip Texture</option>
+			<option>Metal - Brushed</option>
+		</select>
+		<select id="l2m">
+			<option>No mask</option>
+			<option>Round mask</option>
+			<option>Border mask</option>
+		</select>
+	</div>
+	<div id="cbb">
+		Layer 1 <input id="layer1" type="checkbox">
+		<br>
+		Layer 2 <input id="layer2" type="checkbox">
+		<br>
+		<button onclick="saveTexture()">Save Image</button>
+	</div>
+
+</div>
+
+<div id="prev">
+	<canvas id="pcanv"></canvas>
+</div>
+
+<script src="js/three.min.js"></script>
+<script src="js/imagesloaded.pkgd.min.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>
