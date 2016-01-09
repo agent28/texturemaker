@@ -311,3 +311,10 @@ function saveTexture() {
 	var dataURL = canvas.toDataURL();
 	window.open(dataURL);
 }
+
+window.onload = function() {
+    if(!window.location.hash) {
+        window.location = window.location + '#loaded';
+        window.location.reload();
+    }
+}
